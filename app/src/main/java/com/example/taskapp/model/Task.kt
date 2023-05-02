@@ -1,14 +1,14 @@
 package com.example.taskapp.model
 
-import android.view.View
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
 data class Task(
     @PrimaryKey(autoGenerate = true)
-    val id: Int? = null,
-    val title:String?=null,
-    val desc:String?=null
+    var id: Int? = null,
+    var title:String?=null,
+    var desc:String?=null
 ):java.io. Serializable
 

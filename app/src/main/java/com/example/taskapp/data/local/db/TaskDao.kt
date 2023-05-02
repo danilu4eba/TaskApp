@@ -3,10 +3,13 @@ package com.example.taskapp.data.local.db
 import androidx.room.*
 import com.example.taskapp.model.Task
 
+
+
+
 @Dao
 interface TaskDao {
 
-    @Query("SELECT * FROM task")
+    @Query("SELECT * FROM task ORDER BY id DESC" )
     fun getAll(): List<Task>
 
     @Insert
